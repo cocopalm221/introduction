@@ -1,0 +1,26 @@
+.vision {
+  .inner {
+    .contents {
+      .visionlist {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+//pc
+@media screen and (max-width: $desktop) {
+}
+//tablet
+@media screen and (max-width: $tablet) {
+}
+//mobile
+@media screen and (max-width: $mp) {
+  .visionlist {
+    flex-wrap: wrap;
+  }
+}
