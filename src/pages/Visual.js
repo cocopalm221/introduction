@@ -1,56 +1,28 @@
-import React, { useRef } from "react";
+import React from "react";
 import Anime from "../assets/Anime";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const Visual = () => {
   const path = process.env.PUBLIC_URL;
-  const style = {
-    width: 100,
-    height: 100,
-    background: "green",
-    position: "absolute",
-    left: 100,
-    top: 100,
-  };
-  const box = useRef(null);
+
   return (
     <div className="visual scroll">
       <div className="inner">
-        {/* 첫인상 남기기 */}
-        <img src={`${path}/images/visual.png`} alt="profile" />
-        {/* Anime sample */}
-        <div
-          ref={box}
-          className="box"
-          style={style}
-          onClick={(e) => {
-            // 애니메이션 대상, 옵션
-            // new Anime(e.target, {
-            //   prop: "left",
-            //   value: 400,
-            //   duration: 500,
-            // });
-            // new Anime(window, {
-            //   prop: "scroll",
-            //   value: 2000,
-            //   duration: 1500,
-            // });
-            new Anime(box.current, {
-              prop: "left",
-              value: 400,
-              duration: 500,
-              callback: () => {
-                new Anime(box.current, {
-                  prop: "top",
-                  value: 400,
-                  duration: 500,
-                  callback: () => {
-                    alert("완료");
-                  },
-                });
-              },
-            });
-          }}
-        ></div>
+        <h1>
+          안녕하세요.
+          <br />
+          프론트엔드 개발자 이혜영입니다.
+        </h1>
+        {/* <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+          blanditiis dignissimos, sed ab error fuga minima molestiae, veritatis
+          sit id vitae. Libero totam eveniet pariatur iusto numquam quos quo
+          natus?
+        </p> */}
+        <div className="btnext">
+          <FontAwesomeIcon icon={faArrowDown} />
+        </div>
       </div>
     </div>
   );

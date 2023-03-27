@@ -12,23 +12,23 @@ const Header = ({ setPage, setOpen, open }) => {
           </span>
           <ul className="gnb">
             <li onClick={() => setPage(0)}>
-              <span>Home</span>
+              <span>WELCOME</span>
             </li>
             <li onClick={() => setPage(1)}>
-              <span>Profile</span>
+              <span>ABOUT ME</span>
             </li>
             <li onClick={() => setPage(2)}>
-              <span>Skill</span>
+              <span>SKILLs& TOOLs</span>
             </li>
             <li onClick={() => setPage(3)}>
-              <span>Portfolio</span>
+              <span>PORTFOLIO</span>
             </li>
-            <li onClick={() => setPage(4)}>
+            {/* <li onClick={() => setPage(4)}>
               <span>Life</span>
             </li>
             <li onClick={() => setPage(5)}>
               <span>Vison</span>
-            </li>
+            </li> */}
           </ul>
           <span
             className="mobile-bt"

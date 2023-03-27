@@ -36,7 +36,7 @@ const MobileMenu = ({ setPage, open, setOpen }) => {
         >
           <span>Portfolio</span>
         </li>
-        <li
+        {/* <li
           onClick={() => {
             setPage(4);
             setOpen(false);
@@ -51,7 +51,7 @@ const MobileMenu = ({ setPage, open, setOpen }) => {
           }}
         >
           <span>Vison</span>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

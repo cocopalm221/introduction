@@ -51,7 +51,7 @@ const App = () => {
     // console.log("현재 이동 페이지:", page);
     new Anime(window, {
       prop: "scroll",
-      value: pos.current[page] - 80,
+      value: pos.current[page] - 0,
       duration: 500,
     });
   }, [page]);
@@ -86,10 +86,10 @@ const App = () => {
         <Profile />
         <Skills />
         <Portpolio />
-        <Life />
-        <Vision />
+        {/* <Life /> */}
+        {/* <Vision /> */}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -35,7 +35,8 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
 }
 .container {
-  padding-top: 80px;
+  width: 100vw;
+  padding-left: 17%;
 }
 h2 {
   padding: 50px 0;
@@ -48,6 +49,4 @@ h3 {
   color: #222;
   font-size: 25px;
   font-weight: 500;
-}
-h4 {
 }
