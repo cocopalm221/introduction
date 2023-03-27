@@ -1,4 +1,5 @@
 import React from "react";
+
 //Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -11,188 +12,116 @@ const Portfolio = () => {
   return (
     <div className="portfolio scroll">
       <div className="inner">
-        <h2 data-aos="fade-up">Portfolio</h2>
-        <div className="contents">
-          {/* 팀 플젝 */}
-          <div className="portfolio-box">
-            <h3>Team Project</h3>
-            <div className="portfolio-team">
-              <div className="portfolio-left">
-                <a
-                  href="https://cocopalm221.github.io/hansalim"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src={`${path}/images/sample.png`} alt="team-project" />
-                </a>
-                (이미지 클릭 시 프로젝트 페이지로 이동합니다)
-              </div>
-              <div className="portfolio-right">
-                <ul className="portfolio-team-list">
-                  <li>프로젝트 명 : </li>
-                  <li>프로젝트 기간 :</li>
-                  <li>프로젝트 주제 :</li>
-                  <li>프로젝트 기여도 :</li>
-                  <li>프로젝트 도구 :</li>
-                  <li>프로젝트 사용언어 :</li>
-                  <li>프로젝트 피그마 :</li>
-                  <li>
-                    프로젝트 Git :{" "}
-                    <a
-                      href="https://cocopalm221.github.io/hansalim"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      alt="portfolio"
-                    >
-                      작업물 보기
-                    </a>
-                  </li>
-                  <li>프로젝트 notion :</li>
-                </ul>
-              </div>
+        <div className="portfolio-box">
+          <div className="portfolio-left">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ZWeI0s7nnpU"
+              title="지출가계부"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div className="portfolio-right">
+            <h4>나의 텅장</h4>
+            <span>2023.02.09 - 2023.03.02</span>
+            <span>
+              목표 소비 금액을 설정할 수 있는 챌린지 형태의 가계부
+              <br />
+              목표금액 입력, 지출 내역 입력, 카테고리별 통계, 커뮤니티 기능 구현
+            </span>
+            <div className="portfolio-skill">
+              <img src={`${path}/images/icon-react.png`} />
+              <img src={`${path}/images/icon-redux.png`} />
+              <img src={`${path}/images/icon-tailwind.png`} />
+              <img src={`${path}/images/icon-stylecomponent.png`} />
             </div>
-            <div className="portfolio-team">
-              <div className="portfolio-left">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src={`${path}/images/sample.png`} alt="team-project" />
-                </a>
-                (이미지 클릭 시 프로젝트 페이지로 이동합니다)
-              </div>
-              <div className="portfolio-right">
-                <ul className="portfolio-team-list">
-                  <li>프로젝트 명 : </li>
-                  <li>프로젝트 기간 :</li>
-                  <li>프로젝트 주제 :</li>
-                  <li>프로젝트 기여도 :</li>
-                  <li>프로젝트 도구 :</li>
-                  <li>프로젝트 사용언어 :</li>
-                  <li>프로젝트 피그마 :</li>
-                  <li>프로젝트 Git :</li>
-                  <li>프로젝트 notion :</li>
-                </ul>
-              </div>
-            </div>
-            <div className="portfolio-team">
-              <div className="portfolio-left">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src={`${path}/images/sample.png`} alt="team-project" />
-                </a>
-                (이미지 클릭 시 프로젝트 페이지로 이동합니다)
-              </div>
-              <div className="portfolio-right">
-                <ul className="portfolio-team-list">
-                  <li>프로젝트 명 : </li>
-                  <li>프로젝트 기간 :</li>
-                  <li>프로젝트 주제 :</li>
-                  <li>프로젝트 기여도 :</li>
-                  <li>프로젝트 도구 :</li>
-                  <li>프로젝트 사용언어 :</li>
-                  <li>프로젝트 피그마 :</li>
-                  <li>프로젝트 Git :</li>
-                  <li>프로젝트 notion :</li>
-                </ul>
-              </div>
+            <div className="portfolio-show">
+              <a
+                href="https://github.com/cocopalm221/moneybook"
+                target="_blank"
+              >
+                <img src={`${path}/images/icon-git.png`} />
+              </a>
+              <a href="https://youtu.be/ZWeI0s7nnpU" target="_blank">
+                <img src={`${path}/images/icon-youtube.png`} />
+              </a>
             </div>
           </div>
-          {/* 개인 스터디 플젝 */}
-          <div className="portfolio-box">
-            <h3>Study Project</h3>
-            {/* Swiper 배치 */}
-            <Swiper
-              loop={true}
-              slidesPerView={1}
-              spaceBetween={0}
-              pagination={true}
-              modules={[Pagination, Navigation]}
-              navigation={true}
-              breakpoints={{
-                860: {
-                  slidesPerView: 1,
-                  spaceBetween: 0,
-                },
-                960: {
-                  slidesPerView: 2,
-                  spaceBetween: 30,
-                },
-                1180: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
-                },
-              }}
-              className="portfolio-slide"
-            >
-              <SwiperSlide>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src={`${path}/images/sample.png`} alt="portfolio" />
-                </a>
-              </SwiperSlide>
-              <SwiperSlide>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src={`${path}/images/sample.png`} alt="portfolio" />
-                </a>
-              </SwiperSlide>
-              <SwiperSlide>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src={`${path}/images/sample.png`} alt="portfolio" />
-                </a>
-              </SwiperSlide>
-              <SwiperSlide>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src={`${path}/images/sample.png`} alt="portfolio" />
-                </a>
-              </SwiperSlide>
-              <SwiperSlide>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src={`${path}/images/sample.png`} alt="portfolio" />
-                </a>
-              </SwiperSlide>
-              <SwiperSlide>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src={`${path}/images/sample.png`} alt="portfolio" />
-                </a>
-              </SwiperSlide>
-            </Swiper>
+        </div>
+        <div className="portfolio-box">
+          <div className="portfolio-left">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/l4c_RrM14EM"
+              title="저기요"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div className="portfolio-right">
+            <h4>저기요</h4>
+            <span>2023.01.09 - 2023.02.05</span>
+            <span>
+              요기요 사이트를 벤치마킹한 음식주문서비스
+              <br />
+              카테고리별 매장 분류, 검색, 장바구니, 금액계산,
+              회원가입,로그인,찾기 기능 구현
+            </span>
+            <div className="portfolio-skill">
+              <img src={`${path}/images/icon-react.png`} />
+              <img src={`${path}/images/icon-redux.png`} />
+              <img src={`${path}/images/icon-tailwind.png`} />
+              <img src={`${path}/images/icon-stylecomponent.png`} />
+            </div>
+            <div className="portfolio-show">
+              <a
+                href="https://github.com/cocopalm221/project_yogiyo"
+                target="_blank"
+              >
+                <img src={`${path}/images/icon-git.png`} />
+              </a>
+              <a href="https://youtu.be/l4c_RrM14EM" target="_blank">
+                <img src={`${path}/images/icon-youtube.png`} />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-box">
+          <div className="portfolio-left">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ER9GzLE9atM"
+              title="미니교보"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div className="portfolio-right">
+            <h4>미니교보</h4>
+            <span>2022.12.05 - 2022.12.23</span>
+            <span>
+              미니프로젝트 교보문고
+              <br />
+              도서 목록, 도서 상세보기 기능 구현
+            </span>
+            <div className="portfolio-skill">
+              <img src={`${path}/images/icon-react.png`} />
+            </div>
+            <div className="portfolio-show">
+              <a href="https://github.com/cocopalm221/kyobo" target="_blank">
+                <img src={`${path}/images/icon-git.png`} />
+              </a>
+              <a href="https://youtu.be/ER9GzLE9atM" target="_blank">
+                <img src={`${path}/images/icon-youtube.png`} />
+              </a>
+            </div>
           </div>
         </div>
       </div>

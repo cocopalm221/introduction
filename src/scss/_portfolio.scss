@@ -1,38 +1,45 @@
 .portfolio {
+  height: 100vh;
+  min-height: 650px;
   .inner {
-    .contents {
-      .portfolio-box {
-        .portfolio-team {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          margin-bottom: 20px;
-          .portfolio-left {
-            width: calc(60% - 10px);
-            text-align: center;
-            a {
-              display: block;
-              img {
-                width: 90%;
-              }
-            }
-          }
-          .portfolio-right {
-            width: calc(40% - 10px);
+    max-width: 100vw;
+    padding: 0;
+    .portfolio-box {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      .portfolio-left {
+        width: 560px;
+        height: 315px;
+      }
+      .portfolio-right {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        h4 {
+          color: #000;
+          &::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 1px;
+            background-color: #000;
+            margin: 10px 0 10px 0px;
           }
         }
-        .portfolio-slide {
-          .swiper-button-next,
-          .swiper-button-prev {
-            color: #fff !important;
-          }
+        img {
+          width: 4%;
+        }
+        .portfolio-skill {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-top: 10px;
+        }
+        .portfolio-show {
+          margin-top: 10px;
           a {
-            display: block;
-            width: 100%;
-            text-align: center;
-            img {
-              width: 100%;
-            }
+            padding-right: 10px;
           }
         }
       }
