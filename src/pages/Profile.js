@@ -14,7 +14,7 @@ const Profile = () => {
               data-aos-duration="400"
               data-aos-delay="300"
             >
-              <img src="/images/I.jpg" alt="profile" />
+              <img src={`${path}/images/me.jpg`} alt="profile" />
               <div className="p-about-txt">
                 <span>😀 이 름 : 이혜영</span>
                 <span>🎉 생년월일 : 91.04.17</span>
