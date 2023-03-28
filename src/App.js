@@ -82,7 +82,7 @@ const App = () => {
       <Header setPage={setPage} setOpen={setOpen} open={open} />
       <MobileMenu setPage={setPage} open={open} setOpen={setOpen} />
       <div className="container">
-        <Visual />
+        <Visual setPage={setPage} setOpen={setOpen} open={open} />
         <Profile />
         <Skills />
         <Portpolio />

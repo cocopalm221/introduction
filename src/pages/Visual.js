@@ -3,7 +3,7 @@ import Anime from "../assets/Anime";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
-const Visual = () => {
+const Visual = ({ setPage, setOpen, open }) => {
   const path = process.env.PUBLIC_URL;
 
   return (
@@ -20,7 +20,7 @@ const Visual = () => {
           sit id vitae. Libero totam eveniet pariatur iusto numquam quos quo
           natus?
         </p> */}
-        <div className="btnext">
+        <div className="btnext" onClick={() => setPage(1)}>
           <FontAwesomeIcon icon={faArrowDown} />
         </div>
       </div>
