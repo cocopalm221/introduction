@@ -4,7 +4,7 @@ const Skills = () => {
   const path = process.env.PUBLIC_URL;
   return (
     <div className="skills scroll">
-      <div className="bg"></div>
+      {/* <div className="bg"></div> */}
       <div className="inner">
         <h2 data-aos="fade-up">SKILLS & TOOLS</h2>
         <div className="contents">
