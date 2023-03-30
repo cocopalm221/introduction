@@ -18,7 +18,7 @@ const Header = ({ setPage, setOpen, open }) => {
               <span>ABOUT ME</span>
             </li>
             <li onClick={() => setPage(2)}>
-              <span>SKILLs& TOOLs</span>
+              <span>SKILLS</span>
             </li>
             <li onClick={() => setPage(3)}>
               <span>PORTFOLIO</span>

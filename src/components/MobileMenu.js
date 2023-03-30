@@ -10,7 +10,7 @@ const MobileMenu = ({ setPage, open, setOpen }) => {
             setOpen(false);
           }}
         >
-          <span>Home</span>
+          <span>WELCOME</span>
         </li>
         <li
           onClick={() => {
@@ -18,7 +18,7 @@ const MobileMenu = ({ setPage, open, setOpen }) => {
             setOpen(false);
           }}
         >
-          <span>Profile</span>
+          <span>ABOUT ME</span>
         </li>
         <li
           onClick={() => {
@@ -26,7 +26,7 @@ const MobileMenu = ({ setPage, open, setOpen }) => {
             setOpen(false);
           }}
         >
-          <span>Skill</span>
+          <span>SKILLS</span>
         </li>
         <li
           onClick={() => {
@@ -34,7 +34,7 @@ const MobileMenu = ({ setPage, open, setOpen }) => {
             setOpen(false);
           }}
         >
-          <span>Portfolio</span>
+          <span>PORTFOLIO</span>
         </li>
         {/* <li
           onClick={() => {
