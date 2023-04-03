@@ -3,7 +3,7 @@
 }
 .gotop {
   position: fixed;
-  left: 13%;
+  left: 2%;
   bottom: -200px;
   display: flex;
   justify-content: center;
@@ -17,4 +17,14 @@
   transition: "bottom 0.5s";
   cursor: pointer;
   z-index: 99999;
+}
+
+//pc
+@media screen and (max-width: $desktop) {
+}
+//tablet
+@media screen and (max-width: $tablet) {
+}
+//mobile
+@media screen and (max-width: $mp) {
 }

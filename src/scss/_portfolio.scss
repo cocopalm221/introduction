@@ -10,6 +10,7 @@
       display: flex;
       align-items: center;
       width: 100%;
+      transition: all 0.5s;
       .portfolio-left {
         img {
           width: 560px;
@@ -20,6 +21,8 @@
         display: flex;
         flex-direction: column;
         margin-left: 50px;
+        padding: 20px;
+        transition: all 0.5s;
         h3 {
           color: #000;
           padding: 0;
@@ -32,14 +35,19 @@
             margin: 10px 0 10px 0px;
           }
         }
+        .portfolio-date {
+          color: #34006b;
+        }
         img {
-          width: 4%;
+          // width: 4%;
+          width: 38px;
+          margin-top: 5px;
         }
         .portfolio-skill {
           display: flex;
           align-items: center;
           gap: 10px;
-          margin-top: 10px;
+          margin-top: 20px;
         }
         .portfolio-show {
           margin-top: 10px;
@@ -53,14 +61,94 @@
 }
 //pc
 @media screen and (max-width: $desktop) {
+  .portfolio-left {
+    iframe {
+      width: 510px;
+      height: 365px;
+    }
+    img {
+      width: 510px !important;
+      height: 365px !important;
+    }
+  }
+  .portfolio-right {
+    margin-left: 30px !important;
+    h3 {
+      font-size: 20px;
+    }
+    img {
+      width: 33px;
+    }
+  }
 }
+@media screen and (max-width: 1024px) {
+  .portfolio-left {
+    iframe {
+      width: 460px;
+      height: 315px;
+    }
+    img {
+      width: 460px !important;
+      height: 215px !important;
+    }
+  }
+  .portfolio-right {
+    margin-left: 0px !important;
+    padding: 0 20px !important;
+  }
+}
+
 //tablet
 @media screen and (max-width: $tablet) {
+  .portfolio-left {
+    iframe {
+      width: 450px;
+      height: 265px;
+    }
+    img {
+      width: 450px !important;
+      height: 265px !important;
+    }
+  }
+  .portfolio-right {
+    margin-left: 0px !important;
+    padding: 20 0px !important;
+  }
+  img {
+    width: 28px;
+  }
 }
 //mobile
 @media screen and (max-width: $mp) {
-  .portfolio-left,
+  .inner {
+    padding-top: 60px !important;
+    .portfolio-box {
+      .portfolio-left,
+      .portfolio-right {
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 680px) {
+  .portfolio-box {
+    flex-direction: column;
+    .portfolio-left {
+      iframe {
+        width: 680px !important;
+        height: 435px !important;
+      }
+      img {
+        width: 680px !important;
+        height: 435px !important;
+      }
+    }
+  }
   .portfolio-right {
-    width: 100% !important;
+    margin-left: 0px !important;
+    padding: 50px 20px !important;
+  }
+  img {
+    width: 28px;
   }
 }

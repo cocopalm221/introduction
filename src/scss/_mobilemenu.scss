@@ -33,4 +33,10 @@
 }
 //mobile
 @media screen and (max-width: $mp) {
+  .mobile {
+    &.active {
+      left: 0 !important;
+    }
+    top: 60px;
+  }
 }

@@ -5,10 +5,10 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 const Header = ({ setPage, setOpen, open }) => {
   return (
     <header className="header">
-      <div className="inner">
+      <div className="h-inner">
         <nav className="nav">
           <span className="header-logo" onClick={() => setPage(0)}>
-            h.young Profile
+            h.young
           </span>
           <ul className="gnb">
             <li onClick={() => setPage(0)}>

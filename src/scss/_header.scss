@@ -6,8 +6,13 @@
   height: 100%;
   background-color: #000;
   z-index: 9999;
-  .inner {
+  .h-inner {
+    position: relative;
+    display: block;
+    max-width: 1460px;
     height: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
     .nav {
       position: relative;
       display: flex;
@@ -44,7 +49,7 @@
             color: #6a6a6a;
             text-transform: uppercase;
             font-weight: 600;
-            transition: color 0.5s;
+            transition: all 0.5s;
             &::after {
               content: "";
               position: absolute;
@@ -85,21 +90,45 @@
 
 //pc
 @media screen and (max-width: $desktop) {
+  .gnb {
+    padding-right: 20px !important;
+    li {
+      span {
+        font-size: 22px !important;
+      }
+    }
+  }
 }
 //tablet
 @media screen and (max-width: $tablet) {
-  // .gnb {
-  //   li {
-  //     padding: 0 20px !important;
-  //   }
-  // }
+  .gnb {
+    padding-right: 10px !important;
+    li {
+      span {
+        font-size: 22px !important;
+      }
+    }
+  }
 }
 //mobile
 @media screen and (max-width: $mp) {
-  .gnb {
-    display: none !important;
-  }
-  .mobile-bt {
-    display: block !important;
+  .header {
+    width: 100%;
+    height: 60px;
+    .h-inner {
+      height: 100%;
+      .nav {
+        .header-logo {
+          top: 10px;
+        }
+        .gnb {
+          display: none !important;
+        }
+        .mobile-bt {
+          display: block !important;
+          color: #fff;
+        }
+      }
+    }
   }
 }

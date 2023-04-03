@@ -117,15 +117,25 @@
 //pc
 @media screen and (max-width: $desktop) {
 }
+
+@media screen and (max-width: 1024px) {
+  .profile {
+    height: 100%;
+  }
+  .profile-box {
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    .profile-intro,
+    .profile-experience,
+    .profile-me,
+    .profile-mbti {
+      width: 48% !important;
+    }
+  }
+}
 //tablet
 @media screen and (max-width: $tablet) {
 }
 //mobile
 @media screen and (max-width: $mp) {
-  // .profile .contents {
-  //   flex-wrap: wrap !important;
-  //   .profile-box {
-  //     width: 100% !important;
-  //   }
-  // }
 }
