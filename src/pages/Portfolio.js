@@ -131,7 +131,9 @@ const Portfolio = () => {
         {/* 개인 작업 */}
         <div className="portfolio-box">
           <div className="portfolio-left">
-            <img src={`${path}/images/sample.jpg`} />
+            <a href="#">
+              <img src={`${path}/images/sample.jpg`} />
+            </a>
           </div>
           <div className="portfolio-right">
             <h3>원더플레이스 클론코딩</h3>
@@ -161,7 +163,12 @@ const Portfolio = () => {
         </div>
         <div className="portfolio-box">
           <div className="portfolio-left">
-            <img src={`${path}/images/Hyundai.gif`} />
+            <a
+              href="https://cocopalm221.github.io/Hyundai-clone/"
+              target="_blank"
+            >
+              <img src={`${path}/images/Hyundai.gif`} />
+            </a>
           </div>
           <div className="portfolio-right">
             <h3>현대그룹 클론코딩</h3>
@@ -194,7 +201,9 @@ const Portfolio = () => {
         </div>
         <div className="portfolio-box">
           <div className="portfolio-left">
-            <img src={`${path}/images/hansalim.gif`} />
+            <a href="https://cocopalm221.github.io/hansalim/" target="_blank">
+              <img src={`${path}/images/hansalim.gif`} />
+            </a>
           </div>
           <div className="portfolio-right">
             <h3>한살림장보기 클론코딩</h3>
