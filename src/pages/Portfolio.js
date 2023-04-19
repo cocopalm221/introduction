@@ -18,6 +18,48 @@ const Portfolio = () => {
             <iframe
               width="560"
               height="315"
+              src="https://www.youtube.com/embed/ff62G5apNco"
+              title="LMS 학습 관리 시스템"
+              // frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              // allowfullscreen
+            ></iframe>
+          </div>
+          <div className="portfolio-right">
+            <h3>NCT 학습 관리 시스템 (Team Project)</h3>
+            <span className="portfolio-date">2023.03.06 - 2023.04.04</span>
+            <span>
+              &bull; 고등학생을 위한 영어 성적 LMS 성적 관리 시스템
+              <br />
+              &bull; 선생님, 학생, 관리자 계정에 따라 사용 가능한 별도 페이지
+              구현
+              <br />
+              &bull; 성적조회, 성적입력, 성적분석, 피드백게시판, 학생관리
+            </span>
+            <div className="portfolio-skill">
+              <img src={`${path}/images/icon-react.png`} />
+              <img src={`${path}/images/icon-redux.png`} />
+              <img src={`${path}/images/icon-tailwind.png`} />
+              <img src={`${path}/images/icon-stylecomponent.png`} />
+            </div>
+            <div className="portfolio-show">
+              <a
+                href="https://github.com/cocopalm221/skycastle.git"
+                target="_blank"
+              >
+                <img src={`${path}/images/icon-git.png`} />
+              </a>
+              <a href="https://youtu.be/ff62G5apNco" target="_blank">
+                <img src={`${path}/images/icon-youtube.png`} />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-box">
+          <div className="portfolio-left">
+            <iframe
+              width="560"
+              height="315"
               src="https://www.youtube.com/embed/ZWeI0s7nnpU"
               title="지출가계부"
               // frameborder="0"
@@ -131,18 +173,13 @@ const Portfolio = () => {
         {/* 개인 작업 */}
         <div className="portfolio-box">
           <div className="portfolio-left">
-            <a href="#">
-              <img src={`${path}/images/sample.jpg`} />
+            <a href="https://cocopalm221.github.io/wonderplace-clone/">
+              <img src={`${path}/images/wonderplace-clone.gif`} />
             </a>
           </div>
           <div className="portfolio-right">
             <h3>원더플레이스 클론코딩</h3>
-            <span className="portfolio-date">2023.03.20 - 2023.00.00</span>
-            {/* <span>
-              미니프로젝트 교보문고
-              <br />
-              도서 목록, 도서 상세보기 기능 구현
-            </span> */}
+            <span className="portfolio-date">2023.03.20 - 2023.04.12</span>
             <div className="portfolio-skill">
               <img src={`${path}/images/icon-html.png`} />
               <img src={`${path}/images/icon-css.png`} />
@@ -155,7 +192,10 @@ const Portfolio = () => {
               >
                 <img src={`${path}/images/icon-git.png`} />
               </a>
-              <a href="#" target="_blank">
+              <a
+                href="https://cocopalm221.github.io/wonderplace-clone/"
+                target="_blank"
+              >
                 <img src={`${path}/images/icon-web.png`} />
               </a>
             </div>
@@ -173,11 +213,6 @@ const Portfolio = () => {
           <div className="portfolio-right">
             <h3>현대그룹 클론코딩</h3>
             <span className="portfolio-date">2023.02.27 - 2023.03.16</span>
-            {/* <span>
-              미니프로젝트 교보문고
-              <br />
-              도서 목록, 도서 상세보기 기능 구현
-            </span> */}
             <div className="portfolio-skill">
               <img src={`${path}/images/icon-html.png`} />
               <img src={`${path}/images/icon-css.png`} />
@@ -208,11 +243,6 @@ const Portfolio = () => {
           <div className="portfolio-right">
             <h3>한살림장보기 클론코딩</h3>
             <span>2022.11.06 - 2022.11.22</span>
-            {/* <span>
-              미니프로젝트 교보문고
-              <br />
-              도서 목록, 도서 상세보기 기능 구현
-            </span> */}
             <div className="portfolio-skill">
               <img src={`${path}/images/icon-html.png`} />
               <img src={`${path}/images/icon-css.png`} />
